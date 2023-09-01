@@ -47,7 +47,7 @@ ${questions}
 You can reach me at the following for questions or contributions: 
 - GitHub: [${githubUrl}](https://github.com/${githubUrl})
 - Email: ${email}
-
+- Video link: https://drive.google.com/file/d/1Y_MBGdCq5jryIBtz_U9Ki57sFUbAoX9U/view
 `;
 };
 
@@ -76,8 +76,7 @@ const questions = [
     type: "list",
     message: chalk.green("What licences are you using?"),
     name: "license",
-    choices: ["none", "GNU AGPLv3", "Mozilla Public", "License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0",
-      "The Unlicense"],
+    choices: ["none", "Mozilla Public", "Apache License 2.0", "MIT License"],
   },
   {
     type: "input",
@@ -160,4 +159,3 @@ function renderLicenseLink(license) {
 init();
 
 
- 

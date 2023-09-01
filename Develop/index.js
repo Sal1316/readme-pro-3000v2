@@ -106,7 +106,7 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to initialize app
+
 function init() {
   inquirer.prompt(questions).then((answers) => {
     console.log("Answers: ", answers);
@@ -121,7 +121,7 @@ function init() {
 }
 
 function renderLicenseBadge(license) {
-  if (license === "none") {//"Mozilla Public", "License 2.0", "Apache License 2.0", "MIT License", "Boost Software License 1.0", "The Unlicense"
+  if (license === "none") {
     return "";
   }
   else if (license === "MIT License") {
@@ -156,16 +156,8 @@ function renderLicenseLink(license) {
   }
 }
 
-// Function call to initialize app
+
 init();
 
 
-
-/* TO DO:
-- table of contents should be dinamic and display a category if it is not empty.
-- if question is left blank, dont display category and remove from table of contents. 
-
-
-
-
-*/ 
+ 
